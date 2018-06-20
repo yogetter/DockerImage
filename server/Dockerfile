@@ -6,3 +6,5 @@ RUN mkdir -p /opt/go/src && cd /opt/go/src && git clone https://github.com/yoget
 	cd MonitorOpenStackVM/server && go get && go build
 
 ADD server /
+
+CMD ["/server"]
